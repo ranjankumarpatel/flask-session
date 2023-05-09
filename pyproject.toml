@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flask-session"
+version = "1.0.0"
+description = ""
+authors = ["Ranjan Kumar Patel <ranjan.patel@thinktalentindia.com>"]
+readme = "README.md"
+packages = [{include = "flask_session"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cachelib = "^0.10.2"
+flask = "<=2.3"
+
+
+[[tool.poetry.source]]
+name = "pypiserver"
+url = "https://pypiserver.thinktalentws48.click/simple/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
